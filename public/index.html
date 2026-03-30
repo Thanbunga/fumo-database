@@ -1,26 +1,160 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Flandre Scarlet Fumos</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #1e1e1e;
+			color: #e4e4e4;
+			margin: 0;
+			padding: 20px;
+		}
+
+		/* Header */
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		/* Card layout */
+		section {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 20px;
+		}
+
+			/* Each fumo card */
+			section > h2 {
+				grid-column: span 1;
+				margin: 0;
+			}
+
+		/* Images */
+		img {
+			max-width: 100%;
+			border-radius: 8px;
+		}
+
+		/* Links */
+		a {
+			color: #4da6ff;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+			a:hover {
+				text-decoration: underline;
+			}
+
+		/* Rarity colors */
+		.common {
+			color: #9e9e9e;
+		}
+
+		.uncommon {
+			color: #7CFC00;
+		}
+
+		.rare {
+			color: #00bfff;
+		}
+
+		.epic {
+			color: #ba55d3;
+		}
+
+		.legendary {
+			color: #ff8c00;
+		}
+
+		.mythic {
+			color: #ffd700;
+		}
+
+		/* Text spacing */
+		li {
+			margin-bottom: 6px;
+		}
+
+		.card {
+			background: #2a2a2a;
+			border-radius: 12px;
+			padding: 15px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+			transition: transform 0.2s ease, box-shadow 0.2s ease;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+		}
+
+			.card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 18px rgba(0,0,0,0.6);
+			}
+
+			.card h2 {
+				margin: 0;
+				font-size: 1.2rem;
+			}
+
+			.card img {
+				width: 100%;
+				border-radius: 8px;
+			}
+
+		/* Remove card styling from ul */
+		ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+	</style>
+</head>
+
 <body>
 
 	<article>
 		<header>
-			<h1>Welcome To The Fumo Database</h1>
-			<h3>The World's largest collection of all fumos (official and otherwise)</h3>
-			<img src="images/myfumofamily.png"/>
-			<p>Image via minionmomuwu on www.x.com</p>
+			<h1>Fumo Database</h1>
+			<h2>The World's Largest Digital Collection of Fumos</h2>
 		</header>
 	</article>
-	<ol>
-		<h6>Flandre Scarlet</h6>
-		<ol>
-			<li><a href="flandre.html">Flandre v1</a></li>
-		</ol>
-		<h6>Reimu Hakurei</h6>
-		<ol>
-			<li><a href="reimu.html">Reimu v1</a></li>
-			<li><a href="reimu.html">Reimu (Kourindou)</a></li>
-		</ol>
-	</ol>
+
+	<section>
+
+		<div class="card">
+			<h2>Eirin Yagokoro</h2>
+			<ul>
+				<li><img src="images/eirin.png" /></li>
+				<li>Image via Gift</li>
+				<li><a href="eirin.html" target="_blank">View More</a></li>
+				<li>Release Year: 2021</li>
+			</ul>
+		</div>
+
+		<div class="card">
+			<h2>Flandre Scarlet</h2>
+			<ul>
+				<li><img src="images/flandre.png" /></li>
+				<li>Image via Gift</li>
+				<li><a href="flandre.html" target="_blank">View More</a></li>
+				<li>Release Year: 2009</li>
+			</ul>
+		</div>
+
+		<div class="card">
+			<h2>Koishi Komeiji</h2>
+			<ul>
+				<li><img src="images/koishi.png" /></li>
+				<li>Image via Gift</li>
+				<li><a href="koishi.html" target="_blank">View More</a></li>
+				<li>Release Year: 2012</li>
+			</ul>
+		</div>
+
+	</section>
 
 </body>
 </html>
